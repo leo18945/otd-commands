@@ -29,12 +29,24 @@ They are designed to be one-off command base on the docker technology, I hope th
     ├── strace            (strace is a diagnostic, debugging and instructional userspace utility for Linux. )
     └── svn               (subversion is a software versioning and revision control system.)
 
+## Prerequisites
 
-## Installation
+Make sure you have installed Docker.
+
+## Installing
 ```
 git clone https://github.com/leo18945/otd-commands
 
 cd otd-commands && source ./install
+```
+
+## Running OTD command
+```
+http ifconfig.co/json
+
+myip
+
+...
 ```
 
 ## Reference
