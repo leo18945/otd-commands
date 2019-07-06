@@ -1,0 +1,19 @@
+# https://docs.docker.com/registry/spec/api/
+
+IF_PACKAGE_INSTALLED=$(apk -e info curl)
+if [ "" == "$IF_PACKAGE_INSTALLED" ]; then
+    apk add --no-cache curl
+fi
+
+IF_PACKAGE_INSTALLED=$(apk -e info jq)
+if [ "" == "$IF_PACKAGE_INSTALLED" ]; then
+    apk add --no-cache jq
+fi
+
+dtags() {
+  local image="${1}"
+  curl -s -S "https://registry.hub.docker.com/v2/repositories/library/${image}/tags/" \
+    | jq '."results"[]["name"]' \
+    | sort
+}
+dtags "$@"

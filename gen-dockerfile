@@ -1,0 +1,4 @@
+# https://hub.docker.com/r/lukapeschke/dfa
+# https://github.com/xiaowei0516/dockerfile-from-image
+
+docker run --rm -v '/var/run/docker.sock:/var/run/docker.sock' lukapeschke/dfa "$@"

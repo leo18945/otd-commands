@@ -1,0 +1,6 @@
+# https://github.com/ellerbrock/docker-collection/tree/master/dockerfiles/alpine-git
+# https://hub.docker.com/r/ellerbrock/alpine-git/
+# https://hub.docker.com/r/alpine/git/
+
+ docker run -it --rm -v ${PWD}:/home/git -v $HOME/.ssh:/root/.ssh ellerbrock/alpine-git "$@"
+#docker run -it --rm -v $(pwd):/git      -v $HOME/.ssh:/root/.ssh alpine/git            "$@"

@@ -1,0 +1,4 @@
+# https://github.com/leo18945/alpine-mongodb
+# https://hub.docker.com/r/leo18945/alpine-mongodb
+
+docker run -it leo18945/alpine-mongodb mongo

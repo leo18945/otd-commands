@@ -1,0 +1,19 @@
+alias a=alias
+alias c=clear
+alias f=file
+alias g=grep
+alias l='ls -lha --color=auto'
+
+alias cp='cp -i'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+#alias grep='grep --color=auto'
+alias l.='ls -d .* --color=auto'
+alias ll='ls -l --color=auto'
+alias ls='ls --color=auto'
+alias mv='mv -i'
+alias rm='rm -i'
+
+alias lla='ll -a'
+alias llh='ll -h'
+alias llah='ll -ah'

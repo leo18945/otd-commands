@@ -1,0 +1,5 @@
+# https://httpie.org
+# https://hub.docker.com/r/blacktop/httpie/
+
+# docker run -it --rm --entrypoint=/bin/sh blacktop/httpie -c "http -b ifconfig.co/json | jq '.ip'"
+docker run -it --rm --entrypoint=/bin/sh blacktop/httpie -c "http $@"

@@ -1,0 +1,3 @@
+# Retrieve my public ip address.
+
+docker run -it --rm --entrypoint=ash blacktop/httpie -c "http -b ifconfig.co/json | jq .ip"

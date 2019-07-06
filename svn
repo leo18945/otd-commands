@@ -1,0 +1,4 @@
+#alias svn='docker run -i --rm -v "$PWD":"$PWD" -w "$PWD" -u $(id -u)$(id -g) jgsqware/svn-client'
+docker run -i --rm -v "$PWD":"$PWD" -w "$PWD" -u $(id -u)$(id -g) jgsqware/svn-client "$@"
+# usage
+# svn checkout https://svn.code.sf.net/p/freedos/svn/ freedos-svn

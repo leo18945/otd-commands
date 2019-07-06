@@ -1,0 +1,3 @@
+# Retrieve my public ip address.
+
+docker run -it --rm alpine ash -c "wget -qO- myip.ipip.net"

@@ -1,0 +1,4 @@
+# https://hub.docker.com/_/redis
+# https://github.com/docker-library/redis/tree/a767b4701be8de74f252e204e3eadb39c8e38583/5.0/alpine
+
+docker run -p 6379:6379 -d redis:alpine

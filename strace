@@ -1,0 +1,14 @@
+# https://github.com/frol/docker-alpine-gcc
+# https://hub.docker.com/r/frolvlad/alpine-gcc/
+
+docker run --rm -v "$PWD":/tmp frolvlad/alpine-gcc gcc "$@"
+
+#----------------------#
+#
+# Usage Example:
+# echo -e '#include <stdio.h>\nint main() { printf("Hello World\\n"); }' > qq.c
+# gcc --static /tmp/qq.c -o /tmp/qq
+#
+# equals to:
+# docker run --rm -v `pwd`:/tmp frolvlad/alpine-gcc gcc --static /tmp/qq.c -o /tmp/qq
+#
