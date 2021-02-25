@@ -2,7 +2,7 @@
 
 Are you still suffering from installing software, and worry about polluting your base system, this should be done.
 
-The over the docker commands can help you run command as ***local installed command*** and forget about the installation and configuration.
+The **o**ver **t**he **d**ocker commands can help you run command as ***local installed command*** and forget about the installation and configuration.
 
 They are designed to be one-off command base on the docker technology, I hope this can change the way people they use software, no more installation, configuration, just run the command, the docker will do the rest. If docker hub provide this kind of shortcut command, people no more need to docker pull xxx and docker run xxx, just docker install git, and then git version, blah blah...
 
